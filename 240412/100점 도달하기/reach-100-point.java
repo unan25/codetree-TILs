@@ -13,7 +13,7 @@ public class Main {
             else if (i >= 80) sb.append("B").append(" ");
             else if (i >= 70) sb.append("C").append(" ");
             else if (i >= 60) sb.append("D").append(" ");
-            else sb.append("E").append(" ");
+            else sb.append("F").append(" ");
         }
 
         bw.write(sb.toString().trim());
