@@ -16,7 +16,7 @@ public class Main {
                     sb.append(0).append(" ");
                     break;
                 } else {
-                    sb.append(str).append(" ");
+                    sb.append(i).append(" ");
                     break;
                 }
             }
