@@ -14,8 +14,10 @@ public class Main {
             for (int j = 0; j < str.length(); j++) {
                 if (str.charAt(j) == '3' || str.charAt(j) == '6' || str.charAt(j) == '9') {
                     sb.append(0).append(" ");
+                    break;
                 } else {
                     sb.append(i).append(" ");
+                    break;
                 }
             }
         }
