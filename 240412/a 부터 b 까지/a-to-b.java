@@ -17,11 +17,10 @@ public class Main {
         while (a < b) {
             if (a % 2 == 0){
                 a = a + 3;
-                sb.append(a).append(" ");
             } else {
                 a = a * 2;
-                sb.append(a).append(" ");
             }
+            if(a <= b) sb.append(a).append(" ");
         }
         
         bw.write(sb.toString().trim());
