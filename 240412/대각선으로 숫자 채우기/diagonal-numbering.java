@@ -31,7 +31,7 @@ public class Main {
             int nowRow = i;
             int nowCol = m - 1;
 
-            while (nowRow >= 0 && nowRow < n) {
+             while (nowCol >= 0 && nowRow < n) {
                 arr[nowRow][nowCol] = num;
 
                 nowRow++;
