@@ -23,7 +23,7 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sb.append(arr[i][j]).append(" ");
+                if (arr[i][j] != 0) sb.append(arr[i][j]).append(" ");
             }
             sb.append("\n");
         }
