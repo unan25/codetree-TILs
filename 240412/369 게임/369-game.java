@@ -12,11 +12,11 @@ public class Main {
         for (int i = 1; i <= a; i++) {
             String str = String.valueOf(i);
             for (int j = 0; j < str.length(); j++) {
-                if (str.charAt(j) == '3' || str.charAt(j) == '6' || str.charAt(j) == '9') {
+                if (str.contains("3") || str.contains("6") || str.contains("9")) {
                     sb.append(0).append(" ");
                     break;
                 } else {
-                    sb.append(i).append(" ");
+                    sb.append(str).append(" ");
                     break;
                 }
             }
