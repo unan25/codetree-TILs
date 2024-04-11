@@ -1,7 +1,5 @@
 import java.io.*;
 
-import static java.lang.Math.min;
-
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -10,16 +8,16 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
         int[] dp = new int[n + 1];
 
-        for (int i = 0; i <= n; i++) {
-            dp[i] = 1;
+        for (int i = 1; i <= n; i++) {
+            dp[i] = i;
         }
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j * j <= i; j++) {
-                dp[i] = min(dp[i], dp[i - j * j] + 1);
+        for (int i = 2; i <= n; i++) {
+            for (int j = 2; j * j <= i; j++) {
+                dp[i] = Math.min(dp[i], dp[i - j * j] + 1);
             }
         }
-        
+
         bw.write(String.valueOf(dp[n]));
 
         bw.flush();
