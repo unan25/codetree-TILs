@@ -16,7 +16,7 @@ public class Main {
         String str = br.readLine();
         int count = 0;
         double sum = 0;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < n; i++) {
             if (str.equals(String.valueOf(arr[i].charAt(0)))) {
                 count++;
                 sum += arr[i].length();
