@@ -10,9 +10,12 @@ public class Main {
         int b = Integer.parseInt(String.valueOf(br.readLine().length()));
         int c = Integer.parseInt(String.valueOf(br.readLine().length()));
 
-        int temp = Math.min(a, b);
-        temp = Math.min(temp, c);
+        int min = Math.min(a, b);
+        min = Math.min(min, c);
 
-        System.out.println(temp);
+        int max = Math.max(a, b);
+        max = Math.max(max, c);
+
+        System.out.println(max - min);
     }
 }
