@@ -30,22 +30,19 @@ public class Main {
                     sb.append(s);
                 }
                 sb.append("\n");
-                str = sb.toString();
             }
             if (num == 2) {
                 String a = st.nextToken();
                 String b = st.nextToken();
                 for (int j = 0; j < str.length(); j++) {
-                    if (String.valueOf(str.charAt(j)).equals(a)) {
+                    if (arr[j].equals(a)) {
                         arr[j] = b;
                     }
                 }
-
                 for (String s : arr) {
                     sb.append(s);
                 }
                 sb.append("\n");
-                str = sb.toString();
             }
         }
 
