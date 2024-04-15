@@ -6,9 +6,15 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
 
-        sb.append(br.readLine());
+        String str = br.readLine();
+        char[] arr = str.toCharArray();
 
-        sb.replace(1, 2, "a");
+        arr[1] = 'a';
+        arr[arr.length - 2] = 'a';
+
+        for (char c : arr) {
+            sb.append(c);
+        }
 
         bw.write(sb.toString());
 
